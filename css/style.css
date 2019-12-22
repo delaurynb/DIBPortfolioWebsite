@@ -1,0 +1,246 @@
+html {
+	margin: 0;
+	padding: 0;
+    background-image: url("../images/pbg3.jpg");
+/*    background-color: #ca7ad6;*/
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+body {
+	margin: 0 auto;
+    width: auto;
+    height: 70%;
+}
+
+.home {
+    background-image: url("../images/stars.gif");
+}
+
+footer {
+    text-align: center;
+}
+
+.column1 {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+
+.column2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the navigation menu */
+.navbar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: Tajawal;
+/*    background-image: url("../images/purplebg2.jpg");*/
+}
+
+.navbar li {
+    display: inline;
+    
+}
+
+/* Navigation links */
+.navbar a {
+    display: inline-block;
+    padding: 0px 30px 0px 30px;
+    text-decoration: none;
+} 
+
+a:link, a:visited {
+    color: #fff;
+}
+
+/* Add a background color on mouse-over */
+.navbar a:hover {
+    color: #ca7ad6;
+/*    color: #e6cceb;*/
+}
+
+/* Style the current/active link */
+.navbar a.active {
+    color: #ca7ad6;
+    text-shadow: 1px 1px 2px black; 
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+    .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+}
+
+h1 {
+	width: auto;
+    max-height: inherit;
+    font-size: 9em;
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+    font-weight: 100;
+	margin: 0 0 .4em;
+	padding: 75px 50px 0px 50px;
+    color: aliceblue;
+    text-shadow: 4px 4px 4px #ab119c;
+}
+
+
+h3 {
+    font-size: 1.5em;
+    font-weight: 200;
+    text-align: center;
+    font-family: 'Tajawal', sans-serif;
+    color: #ca7ad6;
+/*        ab119c;*/
+    padding: 0px 50px 75px 50px;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+	line-height: 2;
+    font-size: 1.3em;
+	text-align: center;
+    font-family: 'Tajawal', sans-serif;
+    margin: 1em 5em;
+    padding: 0px 10px 0px 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+h2 {
+    font-size: 3em;
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    text-shadow: 1px 1px 2px #ab119c;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: rgb(171, 17, 156);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: rgb(151, 07, 136);
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    background-color: rgba(225, 225, 225, 0.7);
+    padding: 20px;
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-bottom:  10px;
+    margin-right: 50px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%; 
+}
+
+.plink {
+    position: relative;
+    text-align: center;
+    color: rgb(171, 17, 156);
+    font-family: 'Tajawal', sans-serif;
+    font-size: 1em;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h4 {
+    text-align: center;
+    color: rgb(171, 17, 156);
+    font-family: 'Tajawal', sans-serif;
+    font-size: 2em;
+    margin: 10px;
+    text-shadow: 1px 1px 2px #000;
+}
+
+label {
+    font-family: 'Tajawal', sans-serif;
+}
+  
+/*Social Medida Links*/
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+} 
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
