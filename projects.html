@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="Portfolio" content="My website portfolio page.">
+    <title>Porfolio - DeLauryn Brown</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Dancing+Script|Darker+Grotesque|Julius+Sans+One|Thasadith&display=swap" rel="stylesheet">
+    <style>
+        /* Create three equal columns that floats next to each other */
+        * {box-sizing: border-box;}
+        .nav {
+            margin: 0;
+        }
+        a:hover {
+            opacity: 80%;
+        }
+        #boxshadow {
+            position: relative;
+            -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+            -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+            box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+            padding: 10px;
+            background: white;
+        }
+
+        /* Make the image fit the box */
+        #boxshadow img {
+            width: 100%;
+            border: 1px solid #8a4419;
+            border-style: inset;
+        }
+
+        #boxshadow::after {
+            content: '';
+            position: absolute;
+            z-index: -1; /* hide shadow behind image */
+            -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);        
+            width: 70%; 
+            left: 15%; /* one half of the remaining 30% */
+            height: 100px;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="top"></div>
+    <div class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="projects.html">Portfolio</a></li>
+        </ul>
+    </div>
+    <center>
+        <h2>Projects</h2>   
+        <div class="row">
+            <h3>Freestyle App<br>(UI/UX Design)</h3>
+            <div class="plink">
+                <a href="freestyle.html">
+                <img src="images/freestyle.png" id="boxshadow">
+                </a>
+            </div>  
+            <h3>Thermo  <br>(Design & Rapid Prototyping)</h3>
+            <div class="plink">
+                <a href="thermo.html">
+                <img src="images/thermo.png" id="boxshadow">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <h3>4Hair<br>(Branding)</h3>
+            <a href="4hair.html">
+                <img src="images/Branding%20-%204Hair/snapback%20mockup.JPG" alt="Branding Project - Snapback Mockup" id="boxshadow">
+            </a>
+            <h3>Emoji Collage<br>(Creative)</h3>
+            <a href="p_creative.html">
+                <img src="images/creativeproj_thumbnail.png" alt="Creative Project - JM Thumbnail" id="boxshadow">
+            </a>
+        </div>
+    </center> 
+    
+    <center>
+        <a href="#top"><h3>Back to top</h3></a>
+        <div class="credit">Website built and designed by DeLauryn Brown</div>
+    </center>
+</body>
+</html>
