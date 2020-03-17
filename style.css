@@ -1,0 +1,172 @@
+/*Portfolio Stylesheet*/
+
+html {
+    margin: 0% 15% 0% 15%;
+	padding: 0;
+    background-color: rgba(206, 168, 240, 20%);
+    scroll-behavior: smooth;
+}
+
+h1 {
+/*    font-family: 'Dancing Script', cursive;*/
+/*    font-family: 'Montserrat', sans-serif;*/
+/*    font-family: 'Raleway', sans-serif;*/
+/*    font-family: 'Bellota Text', cursive;*/
+/*    font-family: 'Dosis', sans-serif;*/
+    font-family: 'Quicksand', sans-serif;
+    font-size: 6em;
+    color: rgba(255, 255, 255, 80%);
+    text-shadow: 2px 0px 3px rgba(206, 168, 240, 100%);
+}
+
+h2 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1.5em;
+    color: #8A297C;
+}
+
+h3 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 0.9em;
+    opacity: 25%;
+    color: #8A297C;
+}
+
+/*General Link function*/
+a{
+    text-decoration: none;
+}
+a:hover {
+    opacity: 50%;
+}
+
+/* Navigation Bar */
+.nav{
+    border: .25px solid rgba(206, 168, 240, 80%);
+    border-width: 0.5px 0;
+    margin: 25px 150px;
+    padding: 0;
+    text-align: center;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 1.3em;
+}
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.nav li {
+    display: inline;
+}
+.nav a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    color: none;
+}
+.nav a:link {
+    opacity: 50%;
+}
+.nav a:hover {
+    opacity: 75%;
+}
+.nav a.active {
+    opacity: 80%; 
+}
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+    .nav a {
+    float: none;
+    display: block;
+    width: 100%;
+  }
+}
+
+/*Columns*/
+.picContainer {
+    margin: 0em 5em;
+}
+
+.pImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%; 
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*About Me Page*/
+#bio {
+    display: inline-block;
+    text-align: center;
+}
+p {
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 1.25em;
+}
+
+/*Social Media*/
+
+.fa {
+    padding: 20px; 
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 30px 2px;
+    border-radius: 50%;
+} 
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+/*Images*/
+.column2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+.picContainer {
+    margin: 0em 5em;
+}
+
+/*General Style Components*/
+.vertical {
+    border-left: 6px solid black; 
+    height: 200px; 
+    position:absolute; 
+    left: 50%; 
+} 
+.credit {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 0.9em;
+    opacity: 25%;
+}
