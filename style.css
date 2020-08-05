@@ -11,14 +11,16 @@ h1 {
     margin: 0;
     padding: 0;
     flex-basis: auto;
-/*    font-family: 'Dancing Script', cursive;*/
+    font-family: 'Dancing Script', cursive;
 /*    font-family: 'Montserrat', sans-serif;*/
 /*    font-family: 'Raleway', sans-serif;*/
 /*    font-family: 'Bellota Text', cursive;*/
 /*    font-family: 'Dosis', sans-serif;*/
-    font-family: 'Quicksand', sans-serif;
+/*    font-family: 'Quicksand', sans-serif;*/
     font-size: 9em;
-    color: rgba(255, 255, 255, 80%);
+    color: #8A297C;
+/*    color: rgba(206, 168, 240, 100%);*/
+/*    color: rgba(255, 255, 255, 80%);*/
     text-shadow: 2px 0px 3px rgba(206, 168, 240, 100%);
     text-align: center;
 }
@@ -32,14 +34,14 @@ h2 {
 h3 {
     font-family: 'Julius Sans One', sans-serif;
     font-size: 0.9em;
-    opacity: 25%;
+    opacity: 75%;
     color: #8A297C;
 }
 
 /*General Link function*/
 a{
     text-decoration: none;
-    color:   rgb(138, 41, 124)
+    color: rgb(138, 41, 123)
 }
 a:hover {
     opacity: 50%;
@@ -47,14 +49,14 @@ a:hover {
 
 /* Navigation Bar */
 .nav{
-    border: .25px solid rgba(206, 168, 240, 80%);
+    border: .3px solid rgba(138, 41, 123, 100%);
+/*    border: .3px solid rgba(206, 168, 240, 100%);*/
     border-width: 1px 0;
-    border-color: rgba(138, 41, 124, .25);
     margin: 25px 150px;
     padding: 0;
     text-align: center;
     font-family: 'Darker Grotesque', sans-serif;
-    font-size: 1.3em;
+    font-size: 1.5em;
   
 }
 .nav ul {
@@ -71,10 +73,10 @@ a:hover {
     text-decoration: none;
 }
 .nav a:link {
-    opacity: 50%;
+    opacity: 70%;
 }
 .nav a:hover {
-    opacity: 75%;
+    opacity: 100%;
 }
 .nav a.active {
     opacity: 100%; 
@@ -116,7 +118,7 @@ a:hover {
 }
 p {
     font-family: 'Darker Grotesque', sans-serif;
-    font-size: 1.25em;
+    font-size: 1.5em;
 }
 
 /*Social Media*/
@@ -180,5 +182,5 @@ p {
 .credit {
     font-family: 'Julius Sans One', sans-serif;
     font-size: 0.9em;
-    opacity: 25%;
+    opacity: 75%;
 }
