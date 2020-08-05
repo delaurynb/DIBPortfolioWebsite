@@ -1,49 +1,108 @@
+/*Portfolio Stylesheet*/
+
 html {
-	margin: 0;
+    margin: 0% 10% 0% 10%;
 	padding: 0;
-    background-image: url("../images/pbg3.jpg");
-/*    background-color: #ca7ad6;*/
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-body {
-	margin: 0 auto;
-    width: auto;
-    height: 70%;
+    background-color: rgba(206, 168, 240, 20%);
+    scroll-behavior: smooth;
 }
 
-.home {
-    background-image: url("../images/stars.gif");
-}
-
-footer {
+h1 {
+    margin: 0;
+    padding: 0;
+    flex-basis: auto;
+    font-family: 'Dancing Script', cursive;
+/*    font-family: 'Montserrat', sans-serif;*/
+/*    font-family: 'Raleway', sans-serif;*/
+/*    font-family: 'Bellota Text', cursive;*/
+/*    font-family: 'Dosis', sans-serif;*/
+/*    font-family: 'Quicksand', sans-serif;*/
+    font-size: 9em;
+    color: #8A297C;
+/*    color: rgba(206, 168, 240, 100%);*/
+/*    color: rgba(255, 255, 255, 80%);*/
+    text-shadow: 2px 0px 3px rgba(206, 168, 240, 100%);
     text-align: center;
 }
 
-.column1 {
-    float: left;
-    width: 33.33%;
-    padding: 10px;
+h2 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1.5em;
+    color: #8A297C;
 }
 
-.column2 {
-    float: left;
-    width: 50%;
-    padding: 10px;
+h3 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 0.9em;
+    opacity: 75%;
+    color: #8A297C;
 }
 
-.column3 {
-    float: left;
-    width: 25%;
-    padding: 10px;
+/*General Link function*/
+a{
+    text-decoration: none;
+    color: rgb(138, 41, 123)
+}
+a:hover {
+    opacity: 50%;
 }
 
+/* Navigation Bar */
+.nav{
+    border: .3px solid rgba(138, 41, 123, 100%);
+/*    border: .3px solid rgba(206, 168, 240, 100%);*/
+    border-width: 1px 0;
+    margin: 25px 150px;
+    padding: 0;
+    text-align: center;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 1.5em;
+  
+}
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.nav li {
+    display: inline;
+}
+.nav a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+}
+.nav a:link {
+    opacity: 70%;
+}
+.nav a:hover {
+    opacity: 100%;
+}
+.nav a.active {
+    opacity: 100%; 
+    font-size: 1.2em;
+}
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+    .nav a {
+    float: none;
+    display: block;
+    width: 100%;
+  }
+}
+
+/*Columns*/
 .picContainer {
     margin: 0em 5em;
 }
+
+.pImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%; 
+}
+
 
 /* Clear floats after the columns */
 .row:after {
@@ -52,198 +111,30 @@ footer {
     clear: both;
 }
 
-/* Style the navigation menu */
-.navbar {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    font-size: 1.5em;
-    font-family: Tajawal;
-/*    background-image: url("../images/purplebg2.jpg");*/
-}
-
-.navbar li {
-    display: inline;
-    
-}
-
-/* Navigation links */
-.navbar a {
+/*About Me Page*/
+#bio {
     display: inline-block;
-    padding: 0px 30px 0px 30px;
-    text-decoration: none;
-} 
-
-a:link, a:visited {
-    color: #fff;
-}
-
-/* Add a background color on mouse-over */
-.navbar a:hover {
-    color: #ca7ad6;
-/*    color: #e6cceb;*/
-}
-
-/* Style the current/active link */
-.navbar a.active {
-    color: #ca7ad6;
-    text-shadow: 1px 1px 2px black; 
-}
-
-/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
-@media screen and (max-width: 500px) {
-    .navbar a {
-    float: none;
-    display: block;
-    width: 100%;
-    text-align: left; /* If you want the text to be left-aligned on small screens */
-  }
-}
-
-h1 {
-	width: auto;
-    max-height: inherit;
-    font-size: 9em;
-    font-family: 'Satisfy', cursive;
     text-align: center;
-    font-weight: 100;
-	margin: 0 0 .4em;
-	padding: 75px 50px 0px 50px;
-    color: aliceblue;
-    text-shadow: 4px 4px 4px #ab119c;
 }
-
-
-h3 {
-    font-size: 1.5em;
-    font-weight: 200;
-    text-align: center;
-    font-family: 'Tajawal', sans-serif;
-    color: #ca7ad6;
-/*        ab119c;*/
-    padding: 0px 50px 75px 50px;
-}
-
-.responsive {
-  max-width: 100%;
-  height: auto;
-}
-
 p {
-	line-height: 2;
-    font-size: 1.3em;
-	text-align: center;
-    font-family: 'Tajawal', sans-serif;
-    margin: 1em 5em;
-    padding: 0px 10px 0px 10px;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.2);
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 1.5em;
 }
 
-.credit {
-    line-height: 2;
-    font-size: 0.75em;
-    text-align: center;
-    font-family: 'Tajawal', sans-serif;
-    margin: 1em 5em;
-    padding: 0px 10px 0px 10px;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.0);
-}
+/*Social Media*/
 
-h2 {
-    font-size: 3em;
-    text-align: center;
-    font-family: 'Satisfy', cursive;
-    text-shadow: 1px 1px 2px #ab119c;
-}
-
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: rgb(171, 17, 156);
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-    background-color: rgb(151, 07, 136);
-}
-
-/* Add a background color and some padding around the form */
-.container {
-    background-color: rgba(225, 225, 225, 0.7);
-    padding: 20px;
-    border-radius: 20px;
-    margin-left: 50px;
-    margin-bottom:  10px;
-    margin-right: 50px;
-}
-
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%; 
-}
-
-.plink {
-    position: relative;
-    text-align: center;
-    color: rgb(171, 17, 156);
-    font-family: 'Tajawal', sans-serif;
-    font-size: 1em;
-}
-
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-h4 {
-    text-align: center;
-    color: rgb(171, 17, 156);
-    font-family: 'Tajawal', sans-serif;
-    font-size: 2em;
-    margin: 10px;
-    text-shadow: 1px 1px 2px #000;
-}
-
-label {
-    font-family: 'Tajawal', sans-serif;
-}
-  
-/*Social Medida Links*/
 .fa {
-    padding: 20px;
+    padding: 20px; 
     font-size: 30px;
     width: 20px;
     text-align: center;
     text-decoration: none;
-    margin: 5px 2px;
+    margin: 30px 2px;
     border-radius: 50%;
 } 
 
 .fa:hover {
-    opacity: 0.7;
+    opacity: 0.6;
 }
 
 .fa-linkedin {
@@ -264,4 +155,32 @@ label {
 .fa-pinterest {
   background: #cb2027;
   color: white;
+}
+
+/*Images*/
+.column2 {
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+.column3 {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+.picContainer {
+    margin: 0em 0em;
+}
+
+/*General Style Components*/
+.vertical {
+    border-left: 6px solid black; 
+    height: 200px; 
+    position:absolute; 
+    left: 50%; 
+} 
+.credit {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 0.9em;
+    opacity: 75%;
 }
