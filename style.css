@@ -1,7 +1,7 @@
 /*Portfolio Stylesheet*/
 
 html {
-    margin: 0% 10% 0% 10%;
+    margin: 0% 20% 0% 20%;
 	padding: 0;
     background-color: rgba(206, 168, 240, 20%);
     scroll-behavior: smooth;
@@ -118,7 +118,7 @@ a:hover {
 }
 p {
     font-family: 'Darker Grotesque', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
 
 /*Social Media*/
