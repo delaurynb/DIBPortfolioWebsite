@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="FreeStyle" content="FreeStyle application.">
+    <Title>Projects - GPB</Title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Dancing+Script|Darker+Grotesque|Julius+Sans+One|Thasadith&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        * {box-sizing: border-box;}
+        img {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+    </style>
+</head>
+<body>
+    <div id="top"></div>
+    <div class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Portfolio</a></li>
+        </ul>
+    </div>
+     
+    <h2>G.P.B.</h2>
+    
+    <p><b>Problem:</b><br>Identify options for the integration of voice technology into the Georgia Tech campus experience.</p>
+    <hr>
+    <p><b>Solution:</b><br>Create an experience centered around on-boarding and acclimating a student to campus-life that utilizes voice interaction. This experience is guided by G.P.B., short for General Purpose Buddy, a mobile application allowing students to complete tasks on-the-go without having to sacrifice their attention to constantly be looking at their phone screen. G.P.B. communicates with students along the way providing helpful feedback and tips when completing tasks such as campus navigation, printing remotely, reloading buzzfunds, accessing buildings, and maintaining an overall campus identity.</p>
+    <hr>
+    <p><b>Ideation:</b><br>As a team, we brainstormed characteristics of campus that could be improved and ultimately chose the Buzzcard as a major area of focus. Buzzcards are student identification cards for Georgia Tech students and can be used for everyday tasks such as buying food and getting into buildings. We conduced research by interviewing Georgia Tech students on how they interact with their Buzzcards daily.</p>
+    <p><b>Insights:</b><br>
+    - Buzzcard use is instantaneous and occurs on the go. This revealed an area where voice technology could be of use because Buzzcard interactions often take place while students are in transit with limited time and needing to be aware of their surroundings instead of looking at a screen.<br>
+    - There is a lack of structured workarounds for students in cases where they forget their Buzzcard or when Buzzcard reading technologies fail to work.<br>
+    - Buzzcards tend not to last throughout students’ undergraduate years, due to various uses of the card leading to wear and tear.<br>
+    - On campus a student’s identity is tied to their Buzzcard, however, due to the frequent wear and tear, it is difficult for the card to maintain its role as a physical souvenir of the student’s identity.</p>
+    <hr>
+    <p><b>Storyboard:</b><br>In order to further develop the usability aspect of George, we created a storyboard for the task that covers the main details of the interaction between the student and George that could help minimize or eliminate these issues. This story board focuses on the task of remote printing.<br>
+        - Upon realizing that they need to print, the student uses their phone or laptop to upload their print materials to myprintcenter, which is accessible by George.<br> 
+        - After the materials are uploaded, the rest of the interactions with George can be done in transit to the printer.<br> 
+        - The student receives a notification from George that lets them know the print materials have been received. They then engage in a dialogue that allows the student to determine the best printer for the print job to be executed. Using criteria like how long the current printer queue is and the location of the nearest printer.<br> 
+        - Once the printer is established, George adds the necessary documents to the printer queue and notifies the student that the materials have been added.<br>  
+        - Additionally, George enables the student to edit the details of the print job if needed. For example, if the student wanted to print another copy of the document for their friend, they would be able to ask George to change the print job from 1 to 2 copies.<br> 
+        - Then, if the print materials are next in the queue, once the student is within a certain range of the printer, the print job will start, and George will notify the student that their documents are being printed.<br> 
+        - With George’s assistance, the print job is complete by the time the student arrives at the printer.<br>
+    </p>
+    <hr>
+    <p><b>Wizard of OZ Prototyping:</b><br>The structure of our initial prototype was inspired by the Wizard of Oz prototyping methodology. The design of our application includes voice input and voice feedback at almost every step of process, so we used the voice interaction capabilities of Adobe XD to simulate real voice interaction between the app and the user. The evaluators worked through the series of wire-frames to complete a remote print interaction. The main flow featured a home screen, a select document screen, a select print location screen, and then a sequence of screens that emulated a print progress bar which eventually indicated the completed print job.</p>    
+    <p><b>Heuristic Evaluations:</b><br>Our heuristic evaluation consisted of 3 VUI experts who independently worked through a specific task and gave us detailed feedback based on their experience. In order to structure the evaluation, we framed our research questions with the 10 Usability Heuristics by Jakob Nielsen and Rolf Molich. The basic structure of the questions are very similar to the original heuristics, but they have been tailored to address the usability needed of our application. We provided the evaluators with the following task: Print your resume at the library using G.P.B. Assume that your resume has already been properly uploaded to the printing queue and can be accessed from within the G.P.B. application. </p>
+    <p>The evaluation was conducted through a BlueJeans Network meeting where we shared a link to the prototype with the evaluators so they could access it directly, and they were observed interacting with the app by our team through screen share.</p>
+    <hr>
+    <p><b>Challenges:</b><br>We had two issues with high severity and frequency amongst our evaluators. Users were not entirely sure where they were throughout the process of printing their document. Users were also not sure what was interactive with our app. They did not know when to click on items or speak a command.
+    We learned of some several less severe issues from our usability heuristics. There were a lack of soft exits throughout our app - we only had a cancel button that would bring users back to the home screen. There was a lack of an indicator that showed the user that George was listening. There was no on-boarding process nor was there a help and documentations page, so users had to figure out how to use the app themselves. There was no help offered when users weren’t sure of what to say.</p> 
+    <hr>
+    <p><b>Solutions:</b>
+    To address the severe issues, regarding the visibility of system status, we will incorporate a confirmation and feedback screen or popup that allows users to review the selections they’ve made. All interactions on our final prototype will be fully executable via both voice and physical touch. This will allow users to decide how they want to interact with the app and give them the comfort of knowing they can successfully complete a task using either function. For our less severe issues, regarding user control and free, we plan to add a “Back” button at every step of the processes so that users will be able to immediately undo any mistakes they make without having to restart the process. Furthermore, we will add an animation that informs the users when George is actively listening for them to speak, prompt them with what they can say on the screen, and give them access to a help and documentation screen from anywhere in the application. Finally, we will create an on-boarding tutorial that walks users through how to use the basic functions of the application. This tutorial is meant to be presented on the home screen for first time users, but can be accessed at any time from the help and documentation screen.
+    </p>
+    <hr>
+    <p><b>Final Prototype:</b><br>- The interface’s minimalist design allows students to complete on the go tasks on the go without sacrificing attention by having to constantly be looking at their screen. George communicates with you along the way providing helpful feedback and tips when completing tasks.<br>
+    - General Purpose Buddy uses location data to navigate students around campus directing them to printers, vending machines, dining facilities, laundry machines, and classroom buildings. It recommends locations based on proximity, service availability hours, and the student’s preference based the frequency at certain locations.<br>
+    - GPB enables students to set up print jobs remotely allowing the print job to start before they arrive at the printer and ensuring quick and speedy deliveries. GPB will also notify students in advance if the particular printer or service is down in order to mitigate possible delays or troubleshooting errors.<br>
+    - GPB allows students to update their funds with simple, secure commands. GPB will also remind students in advance when funds are low to ensure they are not surprised by a lack of funds.<br>
+    - The application accommodates building access by generating a random, one-time use, access code to enter major or residence buildings. Students can enter the code into the updated scanners, or have GPB say it for them. This allows students access to campus spaces in the event of a missing Buzzcard while also respecting campus’ move towards maintaining security.<br>
+    - GPB helps preserve the Buzzcard as an identity artifact with its ability to perform and even extend the tasks of the physical Buzzcard. It allows students to minimize use of their Buzzcard, therefore, decreasing the amount of wear and tear and preserving the memories associated with the physical card. Providing information that most people would not have access to unless they had been on campus for a while or developed shortcuts to using these services, GPB not only yields valuable structure towards on-boarding new students to campus but also allows students to feel included in the general flow of campus, further validating their student identity.</p>
+    
+    <center>
+        <a href="#top"><h3>Back to top</h3></a>
+        <div class="credit">Website built and designed by DeLauryn Brown</div>
+    </center>
+    
+</body>
+</html>
