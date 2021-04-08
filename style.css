@@ -1,7 +1,7 @@
 /*Portfolio Stylesheet*/
 
 html {
-    margin: 0% 5% 0% 5%;
+    margin: 0%;
 	padding: 0;
     background-color: rgba(255, 255, 255, 100%);
 /*    background-color: rgba(206, 168, 240, 20%);*/
@@ -39,13 +39,13 @@ h2 {
 }
 
 h3 {
-    font-family: 'Julius Sans One', sans-serif;
-/*    font-family: 'Montserrat', sans-serif;*/
+/*    font-family: 'Julius Sans One', sans-serif;*/
+    font-family: 'Montserrat', sans-serif;
 /*    font-family: 'Raleway' sans-serif;*/
 /*    font-family: 'Bellota Text', cursive;*/
 /*    font-family: 'Dosis', sans-serif;*/
     font-size: 1.5vw;
-    opacity: 75%;
+    opacity: 50%;
     color: #8A297C;
 }
 
